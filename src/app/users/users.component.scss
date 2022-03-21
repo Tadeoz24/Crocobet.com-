@@ -1,44 +1,44 @@
 #container {
-    background-color: #313552;
-    item:last-child {
-      border-bottom: 1px solid #ccc;
-    }
-    width: 100%;
+  background-color: #313552;
+  item:last-child {
+    border-bottom: 1px solid #ccc;
+  }
+  width: 100%;
 
   h1 {
-      color: #dadbbd;
-      margin-right: 149px;
-      transform: translateX(45%);
-    }
-  button {
-      width: 100%;
-    }
-  #list {
-      color: #dadbbd;
-      padding-left: 0;
-      padding-right: 58px;
-    }
-  .main {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      margin: 50px auto;
-      position: absolute;
-      width: 80%;
-    }
-  .items {
-      margin: 0;
-      padding: 0;
-    }
-  .item {
-      background-color: #c8f2ef;
-      border-bottom: 0;
-      border: 1px solid #ccc;
-      list-style: none;
-      margin-left: 48px;
-      margin-right: 44px;
-      padding-left: 9px;
-      padding-right: 12px;
-      padding: 12px;
-    }
+    color: #dadbbd;
+    margin-right: 149px;
+    transform: translateX(45%);
   }
+  button {
+    width: 100%;
+  }
+  #list {
+    color: #dadbbd;
+    padding-left: 0;
+    padding-right: 58px;
+  }
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 50px auto;
+    position: absolute;
+    width: 80%;
+  }
+  .items {
+    margin: 0;
+    padding: 0;
+  }
+  .item {
+    background-color: #c8f2ef;
+    border-bottom: 0;
+    border: 1px solid #ccc;
+    list-style: none;
+    margin-left: 48px;
+    margin-right: 44px;
+    padding-left: 9px;
+    padding-right: 12px;
+    padding: 12px;
+  }
+}

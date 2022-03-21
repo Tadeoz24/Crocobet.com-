@@ -47,7 +47,7 @@ export class UsersComponent implements OnInit {
     Go to cycle */
   public users!: Observable<any>;
 
-  constructor(private userService: UserService, private _router: Router) {}
+  constructor(private userService: UserService, private _router: Router) { }
 
   ngOnInit(): void {
     /* სერვისიდან მეთოდს getAllUsers-ს რათა წამოვიღო API-ის დაბრუნებული შესაბამისი

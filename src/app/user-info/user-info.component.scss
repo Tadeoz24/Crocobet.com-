@@ -1,102 +1,101 @@
 .emp-profile {
-    background: #d4f8e8;
-    border-radius: 0.5rem;
-    border: 10px solid #18b0b0;
-    margin-bottom: 3%;
-    margin-top: 3%;
-    padding: 3%;
+  background: #d4f8e8;
+  border-radius: 0.5rem;
+  border: 10px solid #18b0b0;
+  margin-bottom: 3%;
+  margin-top: 3%;
+  padding: 3%;
 
   .profile-img {
-      file:hover {
-        background: #214252;
-        border-radius: 0.5rem;
-        border: none;
-        font-size: 15px;
-        margin-top: -20%;
-        overflow: hidden;
-        position: relative;
-        width: 70%;
-      }
-      text-align: justify;
+    file:hover {
+      background: #214252;
+      border-radius: 0.5rem;
+      border: none;
+      font-size: 15px;
+      margin-top: -20%;
+      overflow: hidden;
+      position: relative;
+      width: 70%;
+    }
+    text-align: justify;
 
     img {
-        border-radius: 0.5rem;
-        height: 70%;
-        width: 70%;
-      }
+      border-radius: 0.5rem;
+      height: 70%;
+      width: 70%;
+    }
     .file {
-        background: #212529b8;
-        border-radius: 0.5rem;
-        border: none;
-        font-size: 15px;
-        margin-top: -20%;
-        overflow: hidden;
-        position: relative;
-        width: 70%;
+      background: #212529b8;
+      border-radius: 0.5rem;
+      border: none;
+      font-size: 15px;
+      margin-top: -20%;
+      overflow: hidden;
+      position: relative;
+      width: 70%;
 
       input {
-          opacity: 0;
-          position: absolute;
-          right: 0;
-          top: 0;
-        }
-      }
-
-    }
-  .profile-head {
-    h5 {
-        color: #150485;
-      }
-    h6 {
-        color: #590995;
-      }
-    .nav-tabs {
-        margin-bottom: 5%;
-      }
-    }
-  .proile-rating {
-      color: #c62a88;
-      font-size: 12px;
-      margin-top: 5%;
-
-    span {
-        color: #03c4a1;
-        font-size: 15px;
-        font-weight: 600;
-      }
-    }
-  .profile-work {
-      padding: 14%;
-
-    p {
-        color: #1eb2a6;
-        font-size: 12px;
-        font-weight: 600;
-        margin-top: 10%;
-      }
-    span {
-        color: #ffa34d;
-        font-size: 14px;
-        font-weight: 600;
-        text-decoration: none;
-      }
-    ul {
-        list-style: none;
-      }
-    }
-  .profile-tab {
-      background-color: #d4f8e8;
-      border-radius: 0.5rem;
-      border: 3px solid #1eb2a6;
-      padding: 10px;
-
-    label {
-        font-weight: 600;
-      }
-    p {
-        color: #ffa34d;
-        font-family: "Genos Serif", sans-serif;
-        font-weight: 600;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
       }
     }
   }
+  .profile-head {
+    h5 {
+      color: #150485;
+    }
+    h6 {
+      color: #590995;
+    }
+    .nav-tabs {
+      margin-bottom: 5%;
+    }
+  }
+  .profile-rating {
+    color: #c62a88;
+    font-size: 12px;
+    margin-top: 5%;
+
+    span {
+      color: #03c4a1;
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }
+  .profile-work {
+    padding: 14%;
+
+    p {
+      color: #1eb2a6;
+      font-size: 12px;
+      font-weight: 600;
+      margin-top: 10%;
+    }
+    span {
+      color: #ffa34d;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    ul {
+      list-style: none;
+    }
+  }
+  .profile-tab {
+    background-color: #d4f8e8;
+    border-radius: 0.5rem;
+    border: 3px solid #1eb2a6;
+    padding: 10px;
+
+    label {
+      font-weight: 600;
+    }
+    p {
+      color: #ffa34d;
+      font-family: "Genos Serif", sans-serif;
+      font-weight: 600;
+    }
+  }
+}

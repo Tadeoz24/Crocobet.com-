@@ -17,21 +17,21 @@ export class UserInfoComponent implements OnInit, OnDestroy {
   public userInfo!: userInfo;
 
   /* მომხმარებლის id*/
-    /* User id*/
+  /* User id*/
 
   public userId!: number;
 
   /* subscription ტიპის ცვლადი რათა როუტის შეცვლის ან
    აპლიკაციის დახურვის შემდეგ  როდესაც OnDestroy გაეშვება მოვახდინოთ unsubscribe*/
-   /* subscription type variable to change the route or
-    After closing the application, when OnDestroy is launched, unsubscribe */
+  /* subscription type variable to change the route or
+   After closing the application, when OnDestroy is launched, unsubscribe */
   private subscription!: Subscription;
 
   constructor(
     private userService: UserService,
     private activatedRoute: ActivatedRoute,
     private router: Router
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     /* აქტიური როუტიდან id პარამეტრის მნიშვნელობის
@@ -44,9 +44,9 @@ export class UserInfoComponent implements OnInit, OnDestroy {
     /*  სერვისში გატანილი მეთოდის გამოძახებას რომელსაც
      გადავცემთ id-ს და ვაკეთებთ subscribe-ს შემდეგ დაბრუნებულ პასუხს ვუტოლებთ
      userInfo-ს ხოლო მთლიანად ამ ოპერაციას ვუტოლებთ subscription ტიპის ცვლადს*/
-     /* Calling the method taken into service which
-      We pass the id and do the subscribe after we equalize the return
-      userInfo while this operation is equal to the subscription type variable */
+    /* Calling the method taken into service which
+     We pass the id and do the subscribe after we equalize the return
+     userInfo while this operation is equal to the subscription type variable */
     this.subscription = this.userService
       .getUserById(this.userId)
       .subscribe((res) => {

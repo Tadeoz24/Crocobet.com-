@@ -19,13 +19,13 @@ export class UserPostsComponent implements OnInit {
     private userService: UserService,
     private activatedRoute: ActivatedRoute,
     private _router: Router
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     /* აქტიური როუტიდან id პარამეტრის მნიშვნელობის ამოღება და მისი რიცხვად გარდაქმნა
      შემდეგ კი მას ვინახავთ ცვლადში */
-     /* Extract the value of the id parameter from the active route and convert it to a number
-      And then we store it in the variable */
+    /* Extract the value of the id parameter from the active route and convert it to a number
+     And then we store it in the variable */
     this.userId = parseInt(
       this.activatedRoute.snapshot.paramMap.get('id') as string
     );
@@ -39,6 +39,6 @@ export class UserPostsComponent implements OnInit {
   onBackClick() {
     /* იუზერის გადამისამართებას შემდეგ როუტზე */
     /* Redirect the user to the next root */
-     this._router.navigate(['UserInfo', this.userId]);
+    this._router.navigate(['UserInfo', this.userId]);
   }
 }
