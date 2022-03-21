@@ -1,0 +1,44 @@
+<button
+  class="btn btn-dark"
+  id="bttn"
+  [routerLink]="['/Users']"
+  [state]="{ tracingId: 123 }"
+>
+  Main Page
+</button>
+<div class="main">
+  <!-- აეს არის უკან დაბრუნების ღილაკი რომელზეც ადევს კლიკ ლისენერი
+     გამოყენებულია bootstrapის კლასები -->
+     <!-- This is the back button that clicks on the listener
+      Used bootstrap classes -->
+  <div class="d-flex justify-content-center mt-2">
+    <button (click)="onBackClick()" class="btn btn-secondary">Back</button>
+  </div>
+  <div class="container">
+    <!-- კონტეინერში ჩაყრილია პოსტები-->
+    <!-- Posts in the container -->
+    <div class="row">
+      <!--  ციკლის დატრიალება იმდენჯერ რამდენი პოსტიც აქვს იუზერს, ეს ყველაფერი
+        ხდება ასინქრონულად და ჩვენ აღარ გვიწევს typescript ფაილში subscribe-ის გაკეთება,
+        ამ შემთხვევაში post ში ჩაიწერება მომხმარებლის ერთი პოსტი და ყოველ დატრიალებაზე
+        მიიღებს ახალ მნიშვნელობებს  რაზეც ვახდენთ ბაინდინგს და დავხატავთ ქვემოთ აღწერილ
+         თეგებში (h6, h4, p) -->
+         <!-- Rotate the loop as many times as the user has posts, that's all
+         Happens asynchronously and we no longer have to subscribe to the typescript file,
+         In this case, one post of the user will be recorded in the post and for each rotation
+         Will take on new meanings on which we are binding and will draw as described below
+          In tags (h6, h4, p) -->
+      <div class="content-card" *ngFor="let post of userPosts | async">
+        <div class="card-big-shadow">
+          <div class="card card-just-text">
+            <div class="content">
+              <h6 class="category">{{ post?.name }}</h6>
+              <h4 class="title">{{ post?.email }}</h4>
+              <p class="description">{{ post?.body }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

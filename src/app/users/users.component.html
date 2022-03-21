@@ -1,0 +1,26 @@
+<div id="container">
+  <h1>Angular Task</h1>
+  <button (click)="toggleList()" class="btn btn-dark" id="list">
+    Show user list
+  </button>
+
+  <ul [@listAnimation]="items.length" class="items">
+    <li *ngFor="let item of items" class="item">
+      <div class="main" class="items">
+        <!--  ციკლის ასინქრონულად დატრიალება და მომხმარებლის სახელების
+          ღილაკებად დახატვა -->
+          <!-- Cycling asynchronously and usernames
+           Draw as buttons -->
+        <div *ngFor="let user of users | async" class="item">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            (click)="redirecting(user.id)"
+          >
+            {{ user.username }}
+          </button>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
