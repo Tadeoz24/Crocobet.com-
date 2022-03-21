@@ -35,7 +35,7 @@ const listAnimation = trigger('listAnimation', [
 export class UsersComponent implements OnInit {
   public items: any = [];
   /*ლისტის ციკლის სტილი*/
-    /*list cycle styles*/
+  /*list cycle styles*/
 
   toggleList() {
     this.items = this.items.length ? [] : [0];
@@ -43,7 +43,7 @@ export class UsersComponent implements OnInit {
 
   /* შეიქმნა  public ცვლადი რომელიც არის Observable ტიპის რათა შემდეგ მასზე მოხდეს ასინქრონულად
    ციკლში გადავლა*/
-   /* Created a public variable that is of the Observable type so that it can then be synchronized
+  /* Created a public variable that is of the Observable type so that it can then be synchronized
     Go to cycle */
   public users!: Observable<any>;
 

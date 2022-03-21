@@ -1,56 +1,55 @@
 .card-big-shadow {
-  position: relative;
-}
+    position: relative;
+  }
 .card.card-just-text {
   .content {
-    padding: 10px 65px;
-    text-align: center;
+      padding: 10px 65px;
+      text-align: center;
+    }
   }
-}
 .card {
-  height: 100%;
+    height: 100%;
 
   .content {
-    background-color: #757575;
-    padding: 20px 20px 10px 20px;
-  }
+      background-color: #757575;
+      padding: 20px 20px 10px 20px;
+    }
   .description {
-    color: #EC9B3B;
-    font-family: "Roboto Serif", sans-serif;
-    font-size: 16px;
+      color: #EC9B3B;
+      font-family: "Roboto Serif", sans-serif;
+      font-size: 16px;
+    }
   }
-}
 .card-big-shadow {
   &:before {
-    background-image: url("http://static.tumblr.com/i21wc39/coTmrkw40/shadow.png");
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    bottom: -12%;
-    content: "";
-    display: block;
-    left: -12%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 0;
+      background-image: url("http://static.tumblr.com/i21wc39/coTmrkw40/shadow.png");
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      bottom: -12%;
+      content: "";
+      display: block;
+      left: -12%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 0;
+    }
   }
-}
 .content-card {
-  margin-top: 10px;
-
-}
+    margin-top: 10px;
+  }
 .title {
-  color: #ebdbdb;
-  font-family: "Roboto Serif", sans-serif;
-  font-size: 18px;
-}
+    color: #ebdbdb;
+    font-family: "Roboto Serif", sans-serif;
+    font-size: 18px;
+  }
 .category {
-  font-size: 14px;
-}
+    font-size: 14px;
+  }
 #bttn {
-  width: 100%;
-}
+    width: 100%;
+  }
 .main {
-  overflow: hidden;
-}
+    overflow: hidden;
+  }
